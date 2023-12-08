@@ -11,6 +11,7 @@
 		D87EF7AE2B2339F10069074A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EF7AD2B2339F10069074A /* ContentView.swift */; };
 		D87EF7B02B2339F30069074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87EF7AF2B2339F30069074A /* Assets.xcassets */; };
 		D87EF7B32B2339F30069074A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87EF7B22B2339F30069074A /* Preview Assets.xcassets */; };
+		D87EF7C62B233CD40069074A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EF7C52B233CD40069074A /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D87EF7AD2B2339F10069074A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D87EF7AF2B2339F30069074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D87EF7B22B2339F30069074A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D87EF7C52B233CD40069074A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,11 @@
 		D87EF7AA2B2339F10069074A /* SwftUIInsta */ = {
 			isa = PBXGroup;
 			children = (
-				D87EF7AB2B2339F10069074A /* SwftUIInstaApp.swift */,
+				D87EF7BD2B233A880069074A /* App */,
+				D87EF7BC2B233A860069074A /* Core */,
+				D87EF7BB2B233A840069074A /* Extensions */,
+				D87EF7BA2B233A820069074A /* Model */,
+				D87EF7B92B233A7F0069074A /* Services */,
 				D87EF7AD2B2339F10069074A /* ContentView.swift */,
 				D87EF7AF2B2339F30069074A /* Assets.xcassets */,
 				D87EF7B12B2339F30069074A /* Preview Content */,
@@ -65,6 +71,99 @@
 				D87EF7B22B2339F30069074A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D87EF7B92B233A7F0069074A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D87EF7BA2B233A820069074A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D87EF7BB2B233A840069074A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D87EF7BC2B233A860069074A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D87EF7BE2B233B1C0069074A /* Authentication */,
+				D87EF7BF2B233B270069074A /* Feed */,
+				D87EF7C02B233B2D0069074A /* Profile */,
+				D87EF7C12B233B350069074A /* Root */,
+				D87EF7C22B233B3B0069074A /* Search */,
+				D87EF7C32B233BD60069074A /* TabBar */,
+				D87EF7C42B233BFF0069074A /* UploadPost */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D87EF7BD2B233A880069074A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D87EF7AB2B2339F10069074A /* SwftUIInstaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D87EF7BE2B233B1C0069074A /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D87EF7BF2B233B270069074A /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D87EF7C02B233B2D0069074A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		D87EF7C12B233B350069074A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		D87EF7C22B233B3B0069074A /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D87EF7C32B233BD60069074A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D87EF7C52B233CD40069074A /* MainTabView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D87EF7C42B233BFF0069074A /* UploadPost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UploadPost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +238,7 @@
 			files = (
 				D87EF7AE2B2339F10069074A /* ContentView.swift in Sources */,
 				D87EF7AC2B2339F10069074A /* SwftUIInstaApp.swift in Sources */,
+				D87EF7C62B233CD40069074A /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
