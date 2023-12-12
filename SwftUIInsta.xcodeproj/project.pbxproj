@@ -28,6 +28,11 @@
 		D87EF7C62B233CD40069074A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EF7C52B233CD40069074A /* MainTabView.swift */; };
 		D87EF7C82B23413E0069074A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EF7C72B23413E0069074A /* ProfileView.swift */; };
 		D87EF7CB2B2353300069074A /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87EF7CA2B2353300069074A /* UserStatView.swift */; };
+		D8A0E3A02B2896B700D75C11 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D8A0E39F2B2896B700D75C11 /* GoogleService-Info.plist */; };
+		D8A0E3A32B289C0A00D75C11 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D8A0E3A22B289C0A00D75C11 /* FirebaseAuth */; };
+		D8A0E3A52B289C0A00D75C11 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D8A0E3A42B289C0A00D75C11 /* FirebaseFirestore */; };
+		D8A0E3A72B289C0A00D75C11 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D8A0E3A62B289C0A00D75C11 /* FirebaseFirestoreSwift */; };
+		D8A0E3A92B289C0A00D75C11 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D8A0E3A82B289C0A00D75C11 /* FirebaseStorage */; };
 		D8DB0C452B24A79400B41D7F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB0C442B24A79400B41D7F /* FeedView.swift */; };
 		D8DB0C472B24A7B900B41D7F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB0C462B24A7B900B41D7F /* FeedCell.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +60,7 @@
 		D87EF7C52B233CD40069074A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		D87EF7C72B23413E0069074A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		D87EF7CA2B2353300069074A /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		D8A0E39F2B2896B700D75C11 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D8DB0C442B24A79400B41D7F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		D8DB0C462B24A7B900B41D7F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8A0E3A32B289C0A00D75C11 /* FirebaseAuth in Frameworks */,
+				D8A0E3A92B289C0A00D75C11 /* FirebaseStorage in Frameworks */,
+				D8A0E3A52B289C0A00D75C11 /* FirebaseFirestore in Frameworks */,
+				D8A0E3A72B289C0A00D75C11 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +105,7 @@
 				D87EF7BA2B233A820069074A /* Model */,
 				D87EF7B92B233A7F0069074A /* Services */,
 				D87EF7AD2B2339F10069074A /* ContentView.swift */,
+				D8A0E39F2B2896B700D75C11 /* GoogleService-Info.plist */,
 				D87EF7AF2B2339F30069074A /* Assets.xcassets */,
 				D87EF7B12B2339F30069074A /* Preview Content */,
 			);
@@ -244,6 +255,12 @@
 			dependencies = (
 			);
 			name = SwftUIInsta;
+			packageProductDependencies = (
+				D8A0E3A22B289C0A00D75C11 /* FirebaseAuth */,
+				D8A0E3A42B289C0A00D75C11 /* FirebaseFirestore */,
+				D8A0E3A62B289C0A00D75C11 /* FirebaseFirestoreSwift */,
+				D8A0E3A82B289C0A00D75C11 /* FirebaseStorage */,
+			);
 			productName = SwftUIInsta;
 			productReference = D87EF7A82B2339F10069074A /* SwftUIInsta.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +289,9 @@
 				Base,
 			);
 			mainGroup = D87EF79F2B2339F10069074A;
+			packageReferences = (
+				D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = D87EF7A92B2339F10069074A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +308,7 @@
 			files = (
 				D87EF7B32B2339F30069074A /* Preview Assets.xcassets in Resources */,
 				D87EF7B02B2339F30069074A /* Assets.xcassets in Resources */,
+				D8A0E3A02B2896B700D75C11 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +540,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8A0E3A22B289C0A00D75C11 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D8A0E3A42B289C0A00D75C11 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D8A0E3A62B289C0A00D75C11 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		D8A0E3A82B289C0A00D75C11 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8A0E3A12B289C0A00D75C11 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D87EF7A02B2339F10069074A /* Project object */;
 }
