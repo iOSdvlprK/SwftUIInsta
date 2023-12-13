@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D800CAE42B29DD0200AC367E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800CAE32B29DD0100AC367E /* AuthService.swift */; };
+		D800CAE82B29E47000AC367E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D800CAE72B29E47000AC367E /* ContentViewModel.swift */; };
 		D8043F1F2B270FDF004D6E28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8043F1E2B270FDF004D6E28 /* User.swift */; };
 		D8043F212B272514004D6E28 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8043F202B272514004D6E28 /* CurrentUserProfileView.swift */; };
 		D8043F232B273635004D6E28 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8043F222B273635004D6E28 /* Post.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D800CAE32B29DD0100AC367E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D800CAE72B29E47000AC367E /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		D8043F1E2B270FDF004D6E28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D8043F202B272514004D6E28 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		D8043F222B273635004D6E28 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -80,6 +84,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D800CAE12B29DC9600AC367E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D827F1EF2B25D4A600B34E80 /* LoginView.swift */,
+				D827F1F12B25F06000B34E80 /* AddEmailView.swift */,
+				D827F1F52B25FE3600B34E80 /* CreateUsernameView.swift */,
+				D827F1F72B2601EB00B34E80 /* CreatePasswordView.swift */,
+				D827F1F92B2603A400B34E80 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D800CAE22B29DCDC00AC367E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D800CAE32B29DD0100AC367E /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D800CAE52B29E44000AC367E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D800CAE72B29E47000AC367E /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D800CAE62B29E44400AC367E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D87EF7AD2B2339F10069074A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D87EF79F2B2339F10069074A = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +144,6 @@
 				D87EF7BB2B233A840069074A /* Extensions */,
 				D87EF7BA2B233A820069074A /* Model */,
 				D87EF7B92B233A7F0069074A /* Services */,
-				D87EF7AD2B2339F10069074A /* ContentView.swift */,
 				D8A0E39F2B2896B700D75C11 /* GoogleService-Info.plist */,
 				D87EF7AF2B2339F30069074A /* Assets.xcassets */,
 				D87EF7B12B2339F30069074A /* Preview Content */,
@@ -169,11 +208,8 @@
 		D87EF7BE2B233B1C0069074A /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				D827F1EF2B25D4A600B34E80 /* LoginView.swift */,
-				D827F1F12B25F06000B34E80 /* AddEmailView.swift */,
-				D827F1F52B25FE3600B34E80 /* CreateUsernameView.swift */,
-				D827F1F72B2601EB00B34E80 /* CreatePasswordView.swift */,
-				D827F1F92B2603A400B34E80 /* CompleteSignUpView.swift */,
+				D800CAE22B29DCDC00AC367E /* Service */,
+				D800CAE12B29DC9600AC367E /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -200,6 +236,8 @@
 		D87EF7C12B233B350069074A /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				D800CAE62B29E44400AC367E /* View */,
+				D800CAE52B29E44000AC367E /* ViewModel */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -324,12 +362,14 @@
 				D87EF7C82B23413E0069074A /* ProfileView.swift in Sources */,
 				D87EF7AE2B2339F10069074A /* ContentView.swift in Sources */,
 				D827F1F02B25D4A600B34E80 /* LoginView.swift in Sources */,
+				D800CAE42B29DD0200AC367E /* AuthService.swift in Sources */,
 				D8043F232B273635004D6E28 /* Post.swift in Sources */,
 				D87EF7AC2B2339F10069074A /* SwftUIInstaApp.swift in Sources */,
 				D8043F212B272514004D6E28 /* CurrentUserProfileView.swift in Sources */,
 				D827F1F22B25F06000B34E80 /* AddEmailView.swift in Sources */,
 				D8043F252B27503B004D6E28 /* PostGridView.swift in Sources */,
 				D827F1F62B25FE3600B34E80 /* CreateUsernameView.swift in Sources */,
+				D800CAE82B29E47000AC367E /* ContentViewModel.swift in Sources */,
 				D8043F2B2B2773B2004D6E28 /* UploadPostViewModel.swift in Sources */,
 				D8043F272B2755F8004D6E28 /* ProfileHeaderView.swift in Sources */,
 				D827F1FA2B2603A400B34E80 /* CompleteSignUpView.swift in Sources */,
