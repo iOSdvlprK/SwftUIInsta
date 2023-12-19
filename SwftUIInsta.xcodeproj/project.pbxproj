@@ -43,6 +43,7 @@
 		D8DA47582B2C8A3300A1141C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DA47572B2C8A3300A1141C /* LoginViewModel.swift */; };
 		D8DB0C452B24A79400B41D7F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB0C442B24A79400B41D7F /* FeedView.swift */; };
 		D8DB0C472B24A7B900B41D7F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DB0C462B24A7B900B41D7F /* FeedCell.swift */; };
+		D8F5F6C12B31E89700A4CCFC /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F5F6C02B31E89700A4CCFC /* ImageUploader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		D8DA47572B2C8A3300A1141C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D8DB0C442B24A79400B41D7F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		D8DB0C462B24A7B900B41D7F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		D8F5F6C02B31E89700A4CCFC /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				D84668C52B2DFD5100B8E69D /* UserService.swift */,
+				D8F5F6C02B31E89700A4CCFC /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -432,6 +435,7 @@
 				D800CAE82B29E47000AC367E /* ContentViewModel.swift in Sources */,
 				D84EDF672B2F3F1300F285E9 /* EditProfileView.swift in Sources */,
 				D8DA47582B2C8A3300A1141C /* LoginViewModel.swift in Sources */,
+				D8F5F6C12B31E89700A4CCFC /* ImageUploader.swift in Sources */,
 				D82BA2082B2B2C550076C4A9 /* RegistrationViewModel.swift in Sources */,
 				D8043F2B2B2773B2004D6E28 /* UploadPostViewModel.swift in Sources */,
 				D8043F272B2755F8004D6E28 /* ProfileHeaderView.swift in Sources */,
