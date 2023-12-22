@@ -30,7 +30,7 @@ extension Post {
              ),
         .init(id: UUID().uuidString,
               ownerUid: UUID().uuidString,
-              caption: "Wakanda Forever",
+              caption: "Wakanda Foreverve",
               likes: 104,
               imageUrl: "blackpanther",
               timestamp: Timestamp(),
